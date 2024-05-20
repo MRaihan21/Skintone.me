@@ -1,0 +1,66 @@
+<resources>
+
+    <string name="app_name">Skintone.me</string>
+
+    <string name="title_slider1">Welcome to\nSkintone.Me!</string>
+    <string name="title_slider2">Let’s Analyze\nYour Skin!</string>
+    <string name="title_slider3">Get to Know Your\n Skintone, Now!</string>
+    <string name="description_slider1">Skintone.Me is here to give you the best impression in\n helping you analyze your skin tone to ensure the\n harmony of your appearance.</string>
+    <string name="description_slider2">With several advanced features that can help analyze\n your skin tone and provide color palette\n recommendations that you can try.</string>
+    <string name="description_slider3">Explore and get to know your skin tone well for a\n stunning look of yourself based on the appropriate\n recommended color.</string>
+
+    <string name="logo">logo</string>
+
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Your Account</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="gender">Gender</string>
+    <string name="or">or</string>
+    <string name="dont_have_account">Dont have Account?</string>
+
+    <string name="title_image_slider1">Explore your Natural\n Beauty with  Skin Tone\n Analysis that Reveals\n your Uniqueness.</string>
+    <string name="title_image_slider2">Your Skin Tone is a Unique Canvas, and Skin Tone Analysis is the Brush.</string>
+    <string name="title_image_slider3">Skin Tone analysis is a Liberating Journey Into the True Essence of Beauty.</string>
+
+
+    <string name="hi">Hi, Name</string>
+    <string name="identify">Identify your Skin Tone and Start Analyzing it</string>
+    <string name="analyze">Analyze Your Skin, Now!</string>
+
+    <string name="undertone">Undertone\n Vs\n Skintone</string>
+    <string name="how_know">How to Know your Skin Tone</string>
+    <string name="how_care">How to Care Skin Tone</string>
+    <string name="important">Important Things\n You Should Know</string>
+
+    <string name="what_different">What’s The\n Different?</string>
+    <string name="get_know">Get to Know the Different Skin Tones</string>
+    <string name="how_care_skin_based">How to Care for Skin Based on Skin Tone</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_camera">Analyze</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="next">next</string>
+
+    <string name="read_more">Read More </string>
+    <string name="my_profile">My Profile</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account"><u>Delete Account</u></string>
+    <string name="profile">profile</string>
+    <string name="language">Language</string>
+    <string name="icon_skin_profile">icon skin profile</string>
+    <string name="hi_i_m_name_name">Hi, I\'m name names</string>
+
+    <string name="favorite">favorite</string>
+    <string name="icon">icon</string>
+
+    <string-array name="language_array">
+        <item>Indonesia</item>
+        <item>English</item>
+    </string-array>
+
+</resources>
