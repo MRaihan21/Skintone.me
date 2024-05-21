@@ -1,11 +1,12 @@
 package com.skintone.me
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.skintone.me.databinding.ActivityMainBinding
-import com.skintone.me.ui.ui.camera.CameraFragment
+import com.skintone.me.ui.ui.home.CameraActivity
 import com.skintone.me.ui.ui.home.HomeFragment
 import com.skintone.me.ui.ui.profile.ProfileFragment
 
@@ -28,7 +29,8 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.navigation_camera -> {
-                    replaceFragment(CameraFragment())
+                    startActivity(Intent(this, CameraActivity::class.java))
+//                    replaceFragment(CameraFragment())
                     true
                 }
                 R.id.navigation_profile -> {

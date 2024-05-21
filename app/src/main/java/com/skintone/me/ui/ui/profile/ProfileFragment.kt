@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
-import com.skintone.me.MainActivity
+import com.skintone.me.R
 import com.skintone.me.databinding.FragmentProfileBinding
-import com.skintone.me.ui.LoginActivity
+import com.skintone.me.ui.ui.LoginActivity
 
 class ProfileFragment : Fragment() {
 
@@ -33,6 +34,11 @@ class ProfileFragment : Fragment() {
         _binding?.btnLogout?.setOnClickListener {
             startActivity(Intent(activity, LoginActivity::class.java))
         }
+
+        val languages = resources.getStringArray(R.array.language_array)
+        val adapter = ArrayAdapter(requireContext(), R.layout.spinner_item, languages)
+        binding.spinnerLanguage.adapter = adapter
+
         binding.spinnerLanguage.onItemSelectedListener = object  : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 val selectedLanguage = parent.getItemAtPosition(position).toString()

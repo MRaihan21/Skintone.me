@@ -32,8 +32,8 @@
     <string name="analyze">Analyze Your Skin, Now!</string>
 
     <string name="undertone">Undertone\n Vs\n Skintone</string>
-    <string name="how_know">How to Know your Skin Tone</string>
-    <string name="how_care">How to Care Skin Tone</string>
+    <string name="how_know">How to\n Know your\n Skin Tone</string>
+    <string name="how_care">How\n to Care\n Skin Tone</string>
     <string name="important">Important Things\n You Should Know</string>
 
     <string name="what_different">What’s The\n Different?</string>
@@ -57,6 +57,13 @@
 
     <string name="favorite">favorite</string>
     <string name="icon">icon</string>
+    <string name="camera">CAMERA</string>
+    <string name="analyze_your_skin">Analyze Your Skin</string>
+    <string name="text_camera">Make Sure Nothing is Blocking your Face</string>
+    <string name="my_favorite">My Favorite</string>
+    <string name="skintone">skintone</string>
+    <string name="color_palette">palette</string>
+    <string name="jewelry_color">jewelry</string>
 
     <string-array name="language_array">
         <item>Indonesia</item>

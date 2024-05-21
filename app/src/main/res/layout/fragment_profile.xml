@@ -57,6 +57,7 @@
                 android:background="@drawable/rounded_pink"
                 android:entries="@array/language_array"
                 android:theme="@style/SpinnerTextStyle"
+                android:spinnerMode="dropdown"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_profile"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -71,19 +72,6 @@
                 app:layout_constraintEnd_toEndOf="@+id/spinner_language"
                 app:layout_constraintStart_toStartOf="@+id/spinner_language"
                 app:layout_constraintTop_toBottomOf="@+id/spinner_language" />
-
-            <!--            <TextView-->
-            <!--                android:layout_width="0dp"-->
-            <!--                android:layout_height="0dp"-->
-            <!--                android:text="@string/hi_i_m_name_name"-->
-            <!--                android:textSize="18sp"-->
-            <!--                android:padding="8dp"-->
-            <!--                android:textStyle="bold"-->
-            <!--                app:layout_constraintBottom_toBottomOf="@+id/iv_profile"-->
-            <!--                app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                app:layout_constraintStart_toEndOf="@+id/iv_profile"-->
-            <!--                app:layout_constraintTop_toBottomOf="@+id/iv_skin_profile" />-->
-
 
             <ImageView
                 android:id="@+id/iv_profile"
@@ -114,36 +102,38 @@
                 <EditText
                     android:id="@+id/edt_name_profile"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:layout_marginBottom="18dp"
                     android:background="@drawable/rounded_pink"
                     android:drawableEnd="@drawable/ic_setting"
                     android:hint="@string/name"
-                    android:inputType="text"
+                    android:inputType="textPersonName"
                     android:padding="8dp"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     app:layout_constraintBottom_toTopOf="@+id/editText4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
+                    app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+                    android:autofillHints="" />
 
                 <EditText
                     android:id="@+id/edt_gender_profile"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="18dp"
                     android:background="@drawable/rounded_pink"
                     android:drawableEnd="@drawable/ic_setting"
                     android:hint="@string/gender"
-                    android:inputType="text"
+                    android:inputType="textPersonName"
                     android:padding="8dp"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     app:layout_constraintBottom_toTopOf="@+id/editText5"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:autofillHints="" />
 
                 <EditText
                     android:id="@+id/edt_email_profile"
@@ -175,7 +165,8 @@
                     android:textColorHint="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:autofillHints="" />
 
             </LinearLayout>
 

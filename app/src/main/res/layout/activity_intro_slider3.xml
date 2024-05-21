@@ -39,7 +39,7 @@
         style="@style/text_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/description_slider2"
+        android:text="@string/description_slider3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title_intro2" />

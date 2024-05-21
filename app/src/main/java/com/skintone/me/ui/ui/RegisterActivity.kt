@@ -1,4 +1,4 @@
-package com.skintone.me.ui
+package com.skintone.me.ui.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
