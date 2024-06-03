@@ -17,22 +17,13 @@
         android:theme="@style/Theme.Skintoneme"
         tools:targetApi="31">
         <activity
-            android:name=".ui.ui.story.ActivityStory3"
-            android:exported="false" />
-        <activity
-            android:name=".ui.ui.story.StoryActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".ui.ui.story.StoryActivity1"
-            android:exported="false" />
-        <activity
             android:name=".ui.ui.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.ui.FavoriteActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ui.home.CameraActivity"
+            android:name=".ui.ui.camera.CameraActivity"
             android:exported="false" />
         <activity
             android:name=".ui.ui.RegisterActivity"

@@ -1,4 +1,4 @@
-package com.skintone.me.ui.ui.home
+package com.skintone.me.ui.ui.camera
 
 import android.content.Intent
 import android.net.Uri
@@ -22,10 +22,6 @@ class CameraActivity : AppCompatActivity() {
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.ivClose.setOnClickListener{
-            onBackPressed()
-        }
-
         binding.ivCamera.setOnClickListener{
             starCamera()
         }
@@ -38,6 +34,10 @@ class CameraActivity : AppCompatActivity() {
             startActivity(Intent(this, DetailActivity::class.java))
         }
 
+        binding.ivClose.setOnClickListener {
+            onBackPressed()
+        }
+
     }
 
     private fun startGallery() {
@@ -46,7 +46,7 @@ class CameraActivity : AppCompatActivity() {
 
     private fun starCamera() {
         currentImageUri = getImageUri(this)
-        launcherIntentCamera.launch(currentImageUri)
+        launcherIntentCamera.launch(currentImageUri!!)
     }
 
     private val launcherGallery = registerForActivityResult(

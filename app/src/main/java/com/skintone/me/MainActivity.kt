@@ -6,7 +6,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.skintone.me.databinding.ActivityMainBinding
-import com.skintone.me.ui.ui.home.CameraActivity
+import com.skintone.me.ui.ui.camera.CameraActivity
 import com.skintone.me.ui.ui.home.HomeFragment
 import com.skintone.me.ui.ui.profile.ProfileFragment
 
@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.navigation_camera -> {
                     startActivity(Intent(this, CameraActivity::class.java))
-//                    replaceFragment(CameraFragment())
                     true
                 }
                 R.id.navigation_profile -> {

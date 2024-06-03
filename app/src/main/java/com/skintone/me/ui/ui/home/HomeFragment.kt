@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.skintone.me.R
 import com.skintone.me.databinding.FragmentHomeBinding
 import com.skintone.me.ui.ui.FavoriteActivity
+import com.skintone.me.ui.ui.camera.CameraActivity
 
 class HomeFragment : Fragment() {
 
@@ -30,8 +33,19 @@ class HomeFragment : Fragment() {
         binding.ivFavorite.setOnClickListener {
             startActivity(Intent(requireContext(), FavoriteActivity::class.java))
         }
+
         binding.analyze.setOnClickListener {
             startActivity(Intent(requireContext(), CameraActivity::class.java))
+        }
+
+        binding.btnDifferentStories.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_navigation_home_to_differenceStories)
+        }
+        binding.btnKnowSkintone.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_navigation_home_to_knowSkintone)
+        }
+        binding.btnCareSkintone.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_navigation_home_to_careSkintone)
         }
 
     }
@@ -40,4 +54,5 @@ class HomeFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }

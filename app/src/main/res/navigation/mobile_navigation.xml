@@ -9,17 +9,98 @@
         android:id="@+id/navigation_home"
         android:name="com.skintone.me.ui.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_camera"
-        android:name="com.skintone.me.ui.ui.camera.CameraFragment"
-        android:label="@string/title_camera"
-        tools:layout="@layout/fragment_camera" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_careSkintone"
+            app:destination="@id/careSkintone" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_differenceStories"
+            app:destination="@id/differenceStories" />
+        <action
+            android:id="@+id/action_navigation_home_to_knowSkintone"
+            app:destination="@id/knowSkintone" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.skintone.me.ui.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/careSkintone"
+        android:name="com.skintone.me.ui.ui.story2.CareSkintone"
+        android:label="fragment_care_skintone"
+        tools:layout="@layout/fragment_care_skintone" >
+        <action
+            android:id="@+id/action_careSkintone_to_careSkintone2"
+            app:destination="@id/careSkintone2" />
+    </fragment>
+    <fragment
+        android:id="@+id/careSkintone2"
+        android:name="com.skintone.me.ui.ui.story2.CareSkintone2"
+        android:label="fragment_care_skintone2"
+        tools:layout="@layout/fragment_care_skintone2" >
+        <action
+            android:id="@+id/action_careSkintone2_to_careSkintone3"
+            app:destination="@id/careSkintone3" />
+    </fragment>
+    <fragment
+        android:id="@+id/careSkintone3"
+        android:name="com.skintone.me.ui.ui.story2.CareSkintone3"
+        android:label="fragment_care_skintone3"
+        tools:layout="@layout/fragment_care_skintone3" />
+    <activity
+        android:id="@+id/cameraActivity"
+        android:name="com.skintone.me.ui.ui.camera.CameraActivity"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
+    <fragment
+        android:id="@+id/differenceStories"
+        android:name="com.skintone.me.ui.ui.story1.DifferenceStories"
+        android:label="fragment_difference_stories"
+        tools:layout="@layout/fragment_difference_stories" >
+        <action
+            android:id="@+id/action_differenceStories_to_differenceStories2"
+            app:destination="@id/differenceStories2" />
+    </fragment>
+    <fragment
+        android:id="@+id/differenceStories2"
+        android:name="com.skintone.me.ui.ui.story1.DifferenceStories2"
+        android:label="fragment_difference_stories2"
+        tools:layout="@layout/fragment_difference_stories2" >
+        <action
+            android:id="@+id/action_differenceStories2_to_differenceStories3"
+            app:destination="@id/differenceStories3" />
+    </fragment>
+    <fragment
+        android:id="@+id/differenceStories3"
+        android:name="com.skintone.me.ui.ui.story1.DifferenceStories3"
+        android:label="fragment_difference_stories3"
+        tools:layout="@layout/fragment_difference_stories3" />
+    <fragment
+        android:id="@+id/knowSkintone"
+        android:name="com.skintone.me.ui.ui.story3.KnowSkintone"
+        android:label="fragment_know_skintone"
+        tools:layout="@layout/fragment_know_skintone" >
+        <action
+            android:id="@+id/action_knowSkintone_to_knowSkintone2"
+            app:destination="@id/knowSkintone2" />
+    </fragment>
+    <fragment
+        android:id="@+id/knowSkintone2"
+        android:name="com.skintone.me.ui.ui.story3.KnowSkintone2"
+        android:label="fragment_know_skintone2"
+        tools:layout="@layout/fragment_know_skintone2" >
+        <action
+            android:id="@+id/action_knowSkintone2_to_knowSkintone3"
+            app:destination="@id/knowSkintone3" />
+    </fragment>
+    <fragment
+        android:id="@+id/knowSkintone3"
+        android:name="com.skintone.me.ui.ui.story3.KnowSkintone3"
+        android:label="fragment_know_skintone3"
+        tools:layout="@layout/fragment_know_skintone3" />
 </navigation>
